@@ -39,3 +39,16 @@ set backspace=indent,eol,start
 
 " PEP 8 compliance for python
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 textwidth=79 expandtab softtabstop=4 shiftround autoindent
+
+" => Functions
+
+" strip trailing whitespace
+
+function! StripWhitespace()
+  let save_cursor = getpos(".")
+  let old_query = getreg('/')
+  :%s/\s\+$//e
+  call setpos('.', save_cursor)
+  call setreg('/', old_query)
+end function
+noremap <leader>ss :call StripWhitespace()<CR>

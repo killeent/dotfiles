@@ -1,7 +1,10 @@
-# aliases
+# moving around
+alias ..='cd ..'
 
-alias attu='ssh killeent@attu.cs.washington.edu'
-
-#ls aliases
+# info
 alias ls="ls -G"
 alias ll="ls -la"
+
+# personal
+
+alias attu='ssh killeent@attu.cs.washington.edu'
