@@ -1,0 +1,7 @@
+# aliases
+
+alias attu='ssh killeent@attu.cs.washington.edu'
+
+#ls aliases
+alias ls="ls -G"
+alias ll="ls -la"
